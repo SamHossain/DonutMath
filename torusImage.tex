@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{pst-solides3d, pstricks}
+\pagestyle{empty}
+\begin{document}
+\begin{pspicture}(-2,-4)(2,4)
+\psset{Decran=30,viewpoint=20 40 30 rtp2xyz,lightsrc=viewpoint}
+ \psSolid[object=tore, name=A, r1=2.5,r0=1,ngrid=36 72,
+  ]%
+ \psline[arrows=->, linecolor=cyan, linewidth=2pt](3,0) (3,2.5)
+ \psline[arrows=->, linecolor=red, linewidth=2pt](4,-2) (6, -3.05)
+\end{pspicture}
+\newline
+\newline
+\newline
+\newline
+\newline
+\begin{pspicture}(-1,-1)(2,2)
+ \pscircle[linewidth=2pt](0,0){1.5}
+ \psline[arrows=->, linecolor=cyan, linewidth=2pt](0,0) (0,3)
+ \psline[arrows=->, linecolor=red, linewidth=2pt](0,0) (3,0)
+ \psdots[dotsize=6pt, linecolor=green](0,0)
+ 
+\end{pspicture}
+\end{document}
